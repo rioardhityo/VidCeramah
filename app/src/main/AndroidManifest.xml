@@ -20,7 +20,7 @@
         <activity android:name=".ustadDua" />
         <activity android:name=".ustadTiga" />
         <activity android:name=".ustadEmpat" />
-        <activity android:name=".ustadLima"></activity>
+        <activity android:name=".ustadLima" />
     </application>
 
 </manifest>
