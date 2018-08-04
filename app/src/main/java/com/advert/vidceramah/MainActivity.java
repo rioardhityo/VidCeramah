@@ -1,10 +1,10 @@
 package com.advert.vidceramah;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -16,7 +16,7 @@ import com.facebook.ads.AdView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button u1,u2,u3,u4,u5;
+    CardView u1,u2,u3,u4,u5;
     private AdView adView;
 
     @Override
@@ -24,13 +24,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        u1 = (Button)findViewById(R.id.utd1);
-        u2 = (Button)findViewById(R.id.utd2);
-        u3 = (Button)findViewById(R.id.utd3);
-        u4 = (Button)findViewById(R.id.utd4);
-        u5 = (Button)findViewById(R.id.utd5);
+        Toast.makeText(this, "Membutuhkan Koneksi Internet", Toast.LENGTH_LONG).show();
 
-        adView = new AdView(this, "1108733809283900_1108733869283894", AdSize.BANNER_HEIGHT_50);
+        u1 = (CardView) findViewById(R.id.cardView1);
+        u2 = (CardView) findViewById(R.id.cardView2);
+        u3 = (CardView) findViewById(R.id.cardView3);
+        u4 = (CardView) findViewById(R.id.cardView4);
+        u5 = (CardView) findViewById(R.id.cardView5);
+
+        adView = new AdView(this, "YOUR_PLACEMENT_ID", AdSize.BANNER_HEIGHT_50);
         LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
         adContainer.addView(adView);
         adView.loadAd();

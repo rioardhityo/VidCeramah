@@ -56,7 +56,7 @@ public class ustadDua extends AppCompatActivity {
                     rv.setAdapter(adapter);
                     rv.invalidate();
                     pd.dismiss();
-                    Toast.makeText(ustadDua.this, "Say Hello to papa !", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ustadDua.this, "Say Hello to papa !", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(ustadDua.this, "Kenapa bro : " + response.message() + response.errorBody(), Toast.LENGTH_SHORT).show();
                 }

@@ -35,7 +35,7 @@ public class ustadSatu extends AppCompatActivity {
         rv.setHasFixedSize(true);
         //Progress Dialog memperlihatkan proses
         pd = new ProgressDialog(this);
-        pd.setMessage("Sedang mengambil data lokasi...");
+        pd.setMessage("Sedang mengambil data...");
         pd.setTitle("Pesan");
         pd.setCanceledOnTouchOutside(false);
         pd.show();
@@ -56,7 +56,7 @@ public class ustadSatu extends AppCompatActivity {
                     rv.setAdapter(adapter);
                     rv.invalidate();
                     pd.dismiss();
-                    Toast.makeText(ustadSatu.this, "Say Hello to papa !", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ustadSatu.this, "Say Hello to papa !", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(ustadSatu.this, "Kenapa bro : " + response.message() + response.errorBody(), Toast.LENGTH_SHORT).show();
                 }

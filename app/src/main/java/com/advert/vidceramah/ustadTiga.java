@@ -35,7 +35,7 @@ public class ustadTiga extends AppCompatActivity {
         rv.setHasFixedSize(true);
         //Progress Dialog memperlihatkan proses
         pd = new ProgressDialog(this);
-        pd.setMessage("Sedang mengambil data lokasi...");
+        pd.setMessage("Sedang mengambil data...");
         pd.setTitle("Pesan");
         pd.setCanceledOnTouchOutside(false);
         pd.show();

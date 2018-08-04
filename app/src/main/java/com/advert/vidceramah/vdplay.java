@@ -3,10 +3,6 @@ package com.advert.vidceramah;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.jaedongchicken.ytplayer.JLog;
 import com.jaedongchicken.ytplayer.YoutubePlayerView;
@@ -22,9 +18,9 @@ public class vdplay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN); getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN); getSupportActionBar().setDisplayShowHomeEnabled(true);
         setContentView(R.layout.activity_vdplay);
         Intent intent = getIntent();
         Bundle bd= intent.getExtras();
