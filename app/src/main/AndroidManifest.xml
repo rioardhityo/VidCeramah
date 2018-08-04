@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.advert.vidceramah">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +23,7 @@
         <activity android:name=".ustadTiga" />
         <activity android:name=".ustadEmpat" />
         <activity android:name=".ustadLima" />
+        <activity android:name=".vdplay"></activity>
     </application>
 
 </manifest>

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         u4 = (Button)findViewById(R.id.utd4);
         u5 = (Button)findViewById(R.id.utd5);
 
-        adView = new AdView(this, "YOUR_PLACEMENT_ID", AdSize.BANNER_HEIGHT_50);
+        adView = new AdView(this, "1108733809283900_1108733869283894", AdSize.BANNER_HEIGHT_50);
         LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
         adContainer.addView(adView);
         adView.loadAd();

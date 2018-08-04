@@ -28,7 +28,7 @@ public class ustadLima extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ustad_satu);
         rv = (RecyclerView) findViewById(R.id.rv);
-        parsingData("Haawariyyun");
+        parsingData("Hawariyyun terbaru 2018");
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);

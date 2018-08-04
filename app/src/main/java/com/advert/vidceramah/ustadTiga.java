@@ -28,7 +28,7 @@ public class ustadTiga extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ustad_tiga);
         rv = (RecyclerView) findViewById(R.id.rv);
-        parsingData("Evie Effendy");
+        parsingData("evie effendi terbaru 2018");
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);

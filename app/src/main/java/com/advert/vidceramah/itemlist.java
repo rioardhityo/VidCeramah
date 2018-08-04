@@ -1,6 +1,8 @@
 package com.advert.vidceramah;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -31,10 +34,53 @@ public class itemlist extends RecyclerView.Adapter<itemlist.itemHolder> {
         itemHolder objek = new itemHolder(v);
         return objek;
     }
+
     @Override
-    public void onBindViewHolder(@NonNull itemHolder holder, int position) {
+    public void onBindViewHolder(@NonNull itemHolder holder, final int position) {
         holder.judul.setText(listvideo.get(position).getSnippet().getTitle());
         Picasso.get().load(listvideo.get(position).getSnippet().getThumbnails().getHigh().getUrl()).into(holder.thumbnail);
+        final String l1 = listvideo.get(position).getId().getVideoId();
+
+
+        holder.judul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (position==0){
+                    Bundle mBundle = new Bundle();
+                    Intent intent = new Intent(view.getContext(),vdplay.class);
+                    intent.putExtra("links",l1);
+                    intent.putExtra("position",0);
+                    view.getContext().startActivity(intent);
+                } else if (position==1){
+                    Intent intent = new Intent(view.getContext(),vdplay.class);
+                    intent.putExtra("links",l1);
+                    intent.putExtra("position",1);
+                    view.getContext().startActivity(intent);
+                } else if (position==2){
+                    Intent intent = new Intent(view.getContext(),vdplay.class);
+                    intent.putExtra("links",l1);
+                    intent.putExtra("position",2);
+                    view.getContext().startActivity(intent);
+                } else if (position==3){
+                    Intent intent = new Intent(view.getContext(),vdplay.class);
+                    intent.putExtra("links",l1);
+                    intent.putExtra("position",3);
+                    view.getContext().startActivity(intent);
+                } else if (position==4){
+                    Intent intent = new Intent(view.getContext(),vdplay.class);
+                    intent.putExtra("links",l1);
+                    intent.putExtra("position",4);
+                    view.getContext().startActivity(intent);
+                }
+
+
+
+
+            }
+        });
+
+
     }
 
     @Override

@@ -28,7 +28,7 @@ public class ustadDua extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ustad_dua);
         rv = (RecyclerView) findViewById(R.id.rv);
-        parsingData("Felix Siaw");
+        parsingData("Ceramah felix siauw terbaru 2018");
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);

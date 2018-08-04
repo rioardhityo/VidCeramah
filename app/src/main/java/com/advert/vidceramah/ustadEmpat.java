@@ -28,7 +28,7 @@ public class ustadEmpat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ustad_empat);
         rv = (RecyclerView) findViewById(R.id.rv);
-        parsingData("Hanan Attaki");
+        parsingData("Ustad Abdul Somad");
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rv.setLayoutManager(llm);
