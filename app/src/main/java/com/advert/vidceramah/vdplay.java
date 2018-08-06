@@ -21,6 +21,7 @@ public class vdplay extends AppCompatActivity {
 //        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN); getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         setContentView(R.layout.activity_vdplay);
         Intent intent = getIntent();
         Bundle bd= intent.getExtras();

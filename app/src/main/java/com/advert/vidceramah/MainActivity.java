@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AdListener;
+import com.facebook.ads.AdSettings;
 import com.facebook.ads.AdSize;
 import com.facebook.ads.AdView;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //AdSettings.addTestDevice("39532b4e-80a0-4eb0-b503-c3311aadf869");
 
         Toast.makeText(this, "Membutuhkan Koneksi Internet", Toast.LENGTH_LONG).show();
 
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         u4 = (CardView) findViewById(R.id.cardView4);
         u5 = (CardView) findViewById(R.id.cardView5);
 
-        adView = new AdView(this, "YOUR_PLACEMENT_ID", AdSize.BANNER_HEIGHT_50);
+        adView = new AdView(this, "1108733809283900_1111029609054320", AdSize.BANNER_HEIGHT_50);
         LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
         adContainer.addView(adView);
         adView.loadAd();
